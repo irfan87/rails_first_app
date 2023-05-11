@@ -1,0 +1,29 @@
+<h1>Hello from Rails</h1>
+<p>It is now </p>
+<div id="datetime"><%= @time %></div>
+<p>
+  <%= link_to 'Leave', say_goodbye_path %>
+</p>
+<p>
+  <strong>
+    1 + 4 = <%= @adder_result %>
+  </strong>
+</p>
+<p>
+  <strong>
+    <%= @con_cow_boy %>
+  </strong>
+</p>
+<p>
+  <strong>
+    Forward time to one hour <%= @forward_one_hour_time %>
+  </strong>
+</p>
+<p>
+  <h4>List of files in this Rails first project</h4>
+  <ul>
+    <% @files.each do |file| %>
+      <li><%= file %></li>
+    <% end %>
+  </ul>
+</p>
